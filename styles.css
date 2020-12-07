@@ -1,4 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
 
 body {
   text-align: center;
@@ -9,12 +17,19 @@ body {
   height: 100vh;
 }
 
+h1 {
+  font-family: 'Poppins', sans-serif;
+}
+
 h3 {
   color: #dadada;
+  font-weight: 800;
+  letter-spacing: 3px;
 }
 
 h5 {
   color: #adadad;
+  font-weight: 200;
 }
 
 hr {
@@ -41,7 +56,14 @@ hr {
 /* Header Section  */
 
 #header {
-  margin: 20px 0;
+  margin: 0;
+  position: relative;
+  text-align: center;
+}
+
+.logo {
+  padding: 20px;
+  text-align: center;
 }
 
 .logo-text {
@@ -61,17 +83,21 @@ hr {
 .text {
   position: relative;
   z-index: 1;
+  margin: 140px 0 0;
 }
 
-.content {
+#header {
+  background: url(assets/images.jpg);
+  background-size: cover
+}
+
+#header .content {
   height: 700px;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: url(assets/galaxy.jpg);
-  position: relative;
 }
 
 /* Mercury */
@@ -254,4 +280,16 @@ hr {
 .scene h3 {
   position: absolute;
   top: 80%;
+}
+
+/* Credits */
+
+footer {
+  background: #fff;
+  color: #111;
+  padding: 20px 0 ;
+}
+
+footer p {
+  margin: 0;
 }

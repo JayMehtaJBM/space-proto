@@ -35,13 +35,14 @@
 </head>
 
 <body>
-  <div id="header" class="container-fluid">
+  <div id="header" class="conatainer">
     <div class="logo">
       <h1>Get Into <span class="logo-text"> space </span></h1>
     </div>
 
-    <div class="content container-fluid">
-      <div class="overlay"></div>
+
+    <div class="content">
+      
 
       <div class="text">
         <h1>Explore Space In Deep</h1>
@@ -431,56 +432,17 @@
     </div>
   </div>
 
+  <!-- Credits -->
 
-  <!-- Rocket Loader -->
-
-  <div class="wrapper">
-
-    <div class="scene">
-      <div class="rocket">
-        <img src="assets/rocket.png" alt="">
-        
-      </div>
-      <h3>Reaching to the Base</h3>
-    </div>
+  <footer>
+    <p>Information credits to NASA</p>
+  </footer>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <script>
       var scroll = new SmoothScroll('a[href*="#planets"]');
-
-      function star() {
-
-        let count = 50;
-
-        let scene = document.querySelector('.scene');
-
-        for (let i = 0; i < 50; i++) {
-          let star = document.createElement('i');
-          let x = Math.floor(Math.random() * window.innerWidth);
-
-          let duration = Math.random() * 1;
-          let h = Math.random() * 100;
-
-          star.style.left = x + 'px';
-          star.style.width = 1 + 'px'
-          star.style.height = h + 'px'
-          star.style.animationDuration = duration + 's'
-
-          scene.appendChild(star)
-        }
-      }
-
-      star()
-
-      $(window).on("load" , function () {
-
-        setTimeout( function () {
-          $('.wrapper').fadeOut('slow');
-          
-        } , 4000)
-      })
     </script>
 
 </body>
